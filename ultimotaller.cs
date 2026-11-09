@@ -22,7 +22,7 @@ class HabitacionHotel
             if (value == "Individual" || value == "Doble" || value == "Suite")
                 tipo = value;
             else
-                throw new ArgumentException("Tipo de habitación no válido.");
+                throw new ArgumentException("Tipo de habitacion no valido.");
         }
     }
 
@@ -67,7 +67,7 @@ class HabitacionHotel
 
         if (string.IsNullOrWhiteSpace(nombreCliente) || noches <= 0)
         {
-            Console.WriteLine("El nombre del cliente y las noches deben ser válidos.");
+            Console.WriteLine("El nombre del cliente y las noches deben ser validos.");
             return -1;
         }
 
@@ -151,7 +151,7 @@ class Program
         Console.WriteLine("Resultado del segundo intento: " + costo);
 
         bool liberada = habitacion101.Liberar();
-        Console.WriteLine("¿Se liberó la habitación 101? " + liberada);
+        Console.WriteLine("¿Se liberó la habitacion 101? " + liberada);
 
         habitacion303.AplicarDescuento(10);
         Console.WriteLine("Nuevo precio de la suite: $" +
