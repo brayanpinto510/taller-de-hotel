@@ -1,3 +1,8 @@
+Aqui tienes el codigo completo sin tildes, conservando su estructura y funcionamiento:
+
+csharp
+
+```csharp
 
 using System;
 
@@ -22,7 +27,7 @@ class HabitacionHotel
             if (value == "Individual" || value == "Doble" || value == "Suite")
                 tipo = value;
             else
-                throw new ArgumentException("Tipo de habitación no válido.");
+                throw new ArgumentException("Tipo de habitacion no valido.");
         }
     }
 
@@ -61,13 +66,13 @@ class HabitacionHotel
     {
         if (!disponible)
         {
-            Console.WriteLine("La habitación " + numero + " no está disponible.");
+            Console.WriteLine("La habitacion " + numero + " no esta disponible.");
             return -1;
         }
 
         if (string.IsNullOrWhiteSpace(nombreCliente) || noches <= 0)
         {
-            Console.WriteLine("El nombre del cliente y las noches deben ser válidos.");
+            Console.WriteLine("El nombre del cliente y las noches deben ser validos.");
             return -1;
         }
 
@@ -96,7 +101,7 @@ class HabitacionHotel
             ? "Ninguno"
             : clienteActual;
 
-        return "Habitación: " + numero +
+        return "Habitacion: " + numero +
                "\nTipo: " + tipo +
                "\nPrecio por noche: $" + precioPorNoche.ToString("N0") +
                "\nEstado: " + estado +
@@ -151,7 +156,7 @@ class Program
         Console.WriteLine("Resultado del segundo intento: " + costo);
 
         bool liberada = habitacion101.Liberar();
-        Console.WriteLine("¿Se liberó la habitación 101? " + liberada);
+        Console.WriteLine("Se libero la habitacion 101? " + liberada);
 
         habitacion303.AplicarDescuento(10);
         Console.WriteLine("Nuevo precio de la suite: $" +
@@ -176,3 +181,4 @@ class Program
         Console.WriteLine("Fin del programa.");
     }
 }
+```
